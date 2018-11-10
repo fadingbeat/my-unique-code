@@ -1,0 +1,363 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09-Nov-2018, 10:12:02
+    Author     : Amadel-PC
+*/
+* {
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+h3 {
+    font-size: medium;
+    align-content: center;
+    font-style: oblique;
+    font-weight: bolder;
+    color: blue;
+    box-sizing: border-box;
+}
+
+#mytopresnav {
+    
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.topnav-centered a {
+     float: left;
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+    
+}
+
+.topnav-centered .icon {
+    display: none;
+    
+}
+
+#usericon {
+    
+    margin-top: 2em;
+    margin-bottom: auto;
+    margin-left: 90%;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+ul.breadcrumb {
+    
+    top: 10%;
+    right: 85%;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+.tagged {
+    
+    top: 13%;
+    left: 85%;
+}
+
+
+#res {
+    
+    top: 20%;
+}
+
+.latest {
+    
+    top: 20%;
+    left: 92%;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav-centered a:not(:first-child) {display: none;}
+    .topnav-centered a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav-centered.responsive {position: relative;}
+    .topnav-centered.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav-centered.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+#hr {
+    
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/*
+
+@media only screen and (max-width: 768px) {
+
+.col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+   
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+*/
+
+ /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+} 
+
+@media only screen and (max-width: 600px) {
+  div.topnav-centered a{
+    font-size: 11px;
+  }
+}
+
+[class*="col-"] {
+    
+    float: left;
+    padding: 15px;
+    border: 1px solid blue;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#myCanvas {
+    border-style: groove;
+    border: #CE272D;
+    border-color: white;
+    color: #55ACEE;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('./Canvas menu screen/fontawesome/webfonts/fa-brands-400');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#stage{font-family: FontAwesome;}
+
+.fa-paperclip:before {
+  content: "\f0c6";
+  
+}
+.fa-paperclip:hover {
+    color: blue;
+}
+
+.fa-heart:before {
+  content: "\f004"; }
+
+.fa-heart:hover {
+    content: "\f004";
+    color: red;
+}
+
+.fa-eye:before {
+  content: "\f06e"; }
+
+.fa-eye:hover {
+    color: violet;
+}
+
+
+
+
+
+ /* Style the Image Used to Trigger the Modal */
+#landscape, #parsley, #cupcake {
+   
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#landscape:hover, #parsley:hover, #cupcake:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+} 
+
+.col-3 {
+    
+    max-width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

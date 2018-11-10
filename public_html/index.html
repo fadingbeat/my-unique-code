@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Photo carousel</title>
+        <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+	
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="PhotoCSS.css">
+    
+        
+    </head>
+    <body>
+        <div class="row">
+        <div class="col-2">
+        <div class="header">
+            <h3>Photo Carousel</h3>
+        </div>
+        </div>
+        
+        
+        <div class="col-8 menu">
+            
+         
+         <div class="topnav-centered" id="mytopresnav">
+            <a href="#dslr">DSLR</a>
+            <a href="#vectors">Vectors</a>
+            <a href="#authors">Authors</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+         
+        <div class="col-2">
+            <i class="far fa-user" id="usericon"></i>
+        </div>
+       
+        </div>
+        
+        <div class="row">
+            <div class="col-6">
+                <ul class="breadcrumb">
+            <li><a href="#">Search</a></li>
+            <li>Photos</li>
+        </ul>
+            </div>
+            
+            <div class="col-6">
+                <div class="tagged">
+            <i class="fas fa-tag"></i>&nbsp<span id="tagged">DSLR tagged <strong>Photos</strong></span>
+        </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-s-6">
+                <span id="res">DSLR&nbspresults&nbspfor&nbsp<strong>Photos</strong></span>
+            </div>
+            <div class="col-s-6">
+                <div class="latest">
+        <span id="latest">Latest</span><i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i>
+        </div>
+            </div>
+        </div>
+
+        <hr id="hr">
+        
+        
+        
+            <div class="row">
+                <div class="col-3">
+                    <img src="./photos/landscape.jpg" alt="Landscape" id="landscape"  class="hover-shadow">     
+                </div>
+                <div class="col-3">
+                        <img src="./photos/parsley.jpg" alt="Parsley" id="parsley"  class="hover-shadow">     
+                </div>
+                <div class="col-3">
+                    <img src="./photos/cupcake.jpg" alt="Cupcake" id="cupcake" class="hover-shadow">     
+                </div>
+                <div class="col-3">
+                    <img src="./photos/MilkyWay.jpg" alt="Milky way galaxy" id="milkyway" class="hover-shadow">     
+                </div>
+            </div>
+        
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-comment"></i>
+                    <i class="far fa-heart"></i>  
+                    
+                    <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <img class="modal-content" id="img02">    
+                    <img class="modal-content" id="img03">  
+                    <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+                        
+    </div>
+       
+                    
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="PhotoJS.js"></script>
+    </body>
+</html>
